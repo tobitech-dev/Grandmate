@@ -3,8 +3,7 @@ import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import PlayerTag from '../components/PlayerTag.jsx';
 import { rankOf, GM_RP } from '../data/ranks';
-
-// Grandmaster = the top 500 placed players who have reached King I (1700+ rank points).
+).
 export default function Leaderboard() {
   const [rows, setRows] = useState(null);
   useEffect(() => {
