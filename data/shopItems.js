@@ -1,5 +1,3 @@
-// Prices are in coins. Cosmetics only: nothing here changes who wins.
-// minTier: rank needed (0 Pawn ... 5 King). until: limited-time. achievement: earned, not bought.
 const board = (id, name, price, light, dark, x = {}) => ({ id, type: 'board', name, price, light, dark, ...x });
 const piece = (slot, name, price, glyph) => ({ id: 'piece_' + slot, type: 'piece', slot, name, price, glyph });
 const simple = (type, id, name, price, x) => ({ id, type, name, price, ...x });
