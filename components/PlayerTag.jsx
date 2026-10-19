@@ -1,6 +1,4 @@
 import { getItem } from '../data/shopItems';
-
-// Shows a player's avatar (with frame), styled name and title.
 export default function PlayerTag({ u, size = 44 }) {
   const eq = u.equipped || {};
   const av = getItem(eq.avatar);
