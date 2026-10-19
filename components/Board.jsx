@@ -2,7 +2,6 @@ import { ITEM } from '../data/shopItems';
 
 const GLYPH = { p: '♟', n: '♞', b: '♝', r: '♜', q: '♛', k: '♚' };
 
-// myColor: whose pieces get your equipped skins. flip: show the board from black's side.
 export default function Board({ game, sel, targets, onSquare, equipped, myColor = 'w', flip = false }) {
   const theme = ITEM[equipped?.board] || ITEM.board_classic;
   const cells = [];
